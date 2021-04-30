@@ -10,7 +10,12 @@
 
 ## MVC structure of this project
 
-Laravel follows MVC pattern. Here's the link of [Model](https://github.com/AlphaDog707/CarRentalManagement/tree/master/app/Model), [Controller](https://github.com/AlphaDog707/CarRentalManagement/tree/master/app/Http/Controllers) and [View](https://github.com/AlphaDog707/CarRentalManagement/tree/master/resources/views)
+Laravel applications follow the traditional Model-View-Controller design pattern, where we use:
+Controllers to handle user requests and retrieve data, by leveraging Models
+Models to interact with your database and retrieve your objects’ information
+Views to render pages.
+
+ Here's the link of [Model](https://github.com/AlphaDog707/CarRentalManagement/tree/master/app/Model), [Controller](https://github.com/AlphaDog707/CarRentalManagement/tree/master/app/Http/Controllers) and [View](https://github.com/AlphaDog707/CarRentalManagement/tree/master/resources/views)
 
 
 ## About Laravel
