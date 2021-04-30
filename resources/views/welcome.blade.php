@@ -103,10 +103,10 @@
 
             <div class="content">
                 <div class="title  m-b-md">
-                    Car management System
+                    Car rental management System
                 </div>
                 <div class="caption">
-                    By Arman Hossain 
+                    By Arman Hossain    
                     
                 </div>
                 <div class="caption">
