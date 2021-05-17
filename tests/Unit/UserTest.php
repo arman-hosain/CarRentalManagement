@@ -3,7 +3,9 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
-use Illuminate\Support\Facades\Event;
+use Session;
+use App\User;
+use Auth;
 
 
 class UserTest extends TestCase
@@ -22,6 +24,14 @@ class UserTest extends TestCase
             'email'=>'arman@gmail.com'
         ]);
     }
+
+    public function testLogin(){
+        $data=['email'=>'arman@gmail.com','password'=>'tormuj69' ];
+        $response=$this->json('POST', '/login',$data);
+        $this->assertEquals($data['email'],Auth::user()->email);
+    }
+
+
 
 
 
