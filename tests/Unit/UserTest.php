@@ -24,6 +24,15 @@ class UserTest extends TestCase
         $this->assertDatabaseHas('users', [
             'email'=>'arman@gmail.com'
         ]);
+        $this->assertDatabaseHas('users', [
+            'NID'=>'123456789'
+        ]);
+        $this->assertDatabaseHas('users', [
+            'role'=>'0'
+        ]);
+        $this->assertDatabaseHas('users', [
+            'age'=>'20'
+        ]);
     }
 
     public function testLogin(){

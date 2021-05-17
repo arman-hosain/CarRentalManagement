@@ -32,6 +32,13 @@ class carBookingTest extends TestCase
         $this->assertDatabaseHas('car_bookings', [
             'car_id'=>'31'
         ]);
+        $this->assertDatabaseHas('car_bookings', [
+            'rent_time'=>'2021-05-08'
+        ]);
+        $this->assertDatabaseHas('car_bookings', [
+            'payment_status'=>'unpaid'
+        ]);
+  
     }
 
 

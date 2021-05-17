@@ -26,8 +26,30 @@ class carTest extends TestCase
 
 
         $this->assertDatabaseHas('cars', [
-            'brand'=>'ROLS'
+            'model'=>'X52'
         ]);
+        $this->assertDatabaseHas('cars', [
+            'milage'=>'69'
+        ]);
+        $this->assertDatabaseHas('cars', [
+            'seat_number'=>'5'
+        ]);
+        $this->assertDatabaseHas('cars', [
+            'location'=>'DHAKA'
+        ]);
+        $this->assertDatabaseHas('cars', [
+            'details'=>'test1236'
+        ]);
+        $this->assertDatabaseHas('cars', [
+            'rent'=>'52000'
+        ]);
+        $this->assertDatabaseHas('cars', [
+            'picture'=>'Null'
+        ]);
+        $this->assertDatabaseHas('cars', [
+            'status'=>'0'
+        ]);
+        
 
     }
 

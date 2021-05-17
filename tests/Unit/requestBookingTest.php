@@ -34,6 +34,12 @@ class requestBookingTest extends TestCase
         $this->assertDatabaseHas('request_bookings', [
             'car_id'=>'31'
         ]);
+        $this->assertDatabaseHas('request_bookings', [
+            'message'=>'test123'
+        ]);
+        $this->assertDatabaseHas('request_bookings', [
+            'request_date'=>'2021-05-08'
+        ]);
     }
 
 
