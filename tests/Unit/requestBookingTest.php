@@ -40,6 +40,9 @@ class requestBookingTest extends TestCase
         $this->assertDatabaseHas('request_bookings', [
             'request_date'=>'2021-05-08'
         ]);
+        $this->assertDatabaseHas('request_bookings', [
+            'request_status'=>'pending'
+        ]);
     }
 
 
